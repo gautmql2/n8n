@@ -1,1 +1,14 @@
-json { builds: [ { src: packages/cli/bin/n8n.js, use: @vercel/node } ], routes: [ { src: /(. ), dest: /packages/cli/bin/n8n.js } ] }
+{
+  "builds": [
+    {
+      "src": "packages/cli/bin/n8n.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/packages/cli/bin/n8n.js"
+    }
+  ]
+}
