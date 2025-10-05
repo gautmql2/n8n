@@ -1,21 +1,16 @@
 {
-  "version": 2,
-  "builds": [
+  version: 2,
+  builds: [
     {
-      "src": "packages/cli/bin/n8n.js",
-      "use": "@vercel/node"
+      src: packages/cli/bin/n8n.js,
+      use: @vercel/node
     }
   ],
-  "routes": [
+  routes: [
     {
-      "src": "/(.*)",
-      "dest": "/packages/cli/bin/n8n.js"
+      src: /(.),
+      dest: /packages/cli/bin/n8n.js
     }
-  ],
-  "env": {
-    "N8N_HOST": "bexpertadvexcel.vercel.app",
-    "N8N_PORT": "3000",
-    "N8N_PROTOCOL": "https",
-    "N8N_ENCRYPTION_KEY": "gautam123@#n8nkey"
-  }
+  ]
 }
+
